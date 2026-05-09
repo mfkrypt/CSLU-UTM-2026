@@ -40,7 +40,12 @@ sudo usermod -aG docker $USER
 ```
 
 
+---
+
+
 ### BloodHound CLI (CE)
+
+1. Install the tarball
 
 ```bash
 wget https://github.com/SpecterOps/bloodhound-cli/releases/latest/download/bloodhound-cli-linux-amd64.tar.gz
@@ -51,11 +56,45 @@ tar -xvzf bloodhound-cli-linux-amd64.tar.gz
 ```
 
 
+2. Keep the terminal open until you see the randomly generated password displayed. Save this password for the next step.
+
+
+```bash
+[+] BloodHound is ready to go!
+[+] You can log in as `admin` with this password: <Password>
+```
+
+
+3. In a browser, go to `http://localhost:8080/ui/login` and log in with the admin username and the randomly generated password.
+
+
+4. Reset your password as prompted on first login.
+
+
+5. Commands below to stop and start BloodHound
+
+
+```bash
+# To stop BloodHound 
+./bloodhound-cli containers stop
+
+
+# To start BloodHound
+./bloodhound-cli containers up
+```
+
+
+---
+
+
 ### Impacket
 
 ```bash
 sudo apt install impacket
 ```
+
+
+---
 
 
 ### NetExec
@@ -65,6 +104,9 @@ sudo apt install pipx git
 pipx ensurepath
 pipx install git+https://github.com/Pennyw0rth/NetExec
 ```
+
+
+---
 
 
 ### BloodyAD
