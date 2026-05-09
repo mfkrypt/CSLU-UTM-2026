@@ -40,7 +40,7 @@ sudo usermod -aG docker $USER
 ```
 
 
-### BloodHound
+### BloodHound CLI (CE)
 
 ```bash
 wget https://github.com/SpecterOps/bloodhound-cli/releases/latest/download/bloodhound-cli-linux-amd64.tar.gz
@@ -77,5 +77,4 @@ source venv/bin/activate
 
 pip install bloodyAD
 ```
-
 
