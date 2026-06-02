@@ -2,8 +2,33 @@
 
 ## Install Requirements and Tools
 
+> :warning: **Warning:** Please ensure you have at least 16GB of storage and 4GB of RAM before installing
 
-> :warning: **Warning:** Please ensure you have sufficient storage and RAM in your Virtual Machine before installing
+### Prerequisites:
+- Kali Linux or any stable Debian distro
+- Minimum 16GB free storage space
+- Minimum 4GB RAM
+
+
+Lab Installation: https://drive.google.com/file/d/1VpxktEHd-Af2bt9xJ-8LIDU3eBeDoALD/view?usp=sharing
+
+Password: (will be revealed in workshop)
+
+---
+
+### Add a new vmnet adapter (pls use vmware)
+
+- Edit > Virtual Network Editor
+- NAT netowrk adapter
+
+```
+172.16.161.0/24
+```
+
+Follow like the image below
+
+<img width="1378" height="822" alt="image" src="https://github.com/user-attachments/assets/6ab326c2-0137-4a45-a5e6-5726336e7ecf" />
+
 
 
 ### Docker
@@ -115,7 +140,7 @@ pipx install git+https://github.com/Pennyw0rth/NetExec
 # Create a Python virtual environment if you don't already have one
 
 python3 -m venv bloodyadvenv
-source venv/bin/activate
+source bloodyadvenv/bin/activate
 
 pip install bloodyAD
 ```
