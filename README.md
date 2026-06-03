@@ -16,7 +16,7 @@ Password: (will be revealed in workshop)
 
 ---
 
-### Add a new vmnet adapter (pls use vmware)
+### Add a new vmnet adapter (pls use **VMware Pro**)
 
 - Edit > Virtual Network Editor
 - NAT netowrk adapter
